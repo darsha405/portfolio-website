@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Darshan Antaravalli - Java Full Stack Developer & Android App Developer. Graduate in Computer Science Engineering (2026 batch) building end-to-end web and mobile applications.">
+    <meta name="keywords" content="Darshan Antaravalli, Java Full Stack, Android Developer, Software Engineer Portfolio, Web Developer, Java, Firebase, MySQL, Tap Academy">
+    <meta name="author" content="Darshan Antaravalli">
+    <title>Darshan Antaravalli | Java Full Stack & Android Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Open Graph & Social Meta -->
+    <meta property="og:title" content="Darshan Antaravalli | Java Full Stack & Android Developer" />
+    <meta property="og:description" content="Portfolio of Darshan Antaravalli – Java Full Stack Developer & Android App Developer. Graduate in Computer Science Engineering (2026 batch)." />
+    <meta property="og:image" content="assets/profile.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Darshan Antaravalli Portfolio" />
+    <meta name="twitter:description" content="Java Full Stack & Android Developer portfolio showcasing projects and certifications." />
+    <meta name="twitter:image" content="assets/profile.jpg" />
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Darshan Antaravalli",
+      "url": "https://yourdomain.com/",
+      "sameAs": [
+        "https://github.com/darsha405",
+        "https://www.linkedin.com/in/darshan-antaravalli"
+      ],
+      "jobTitle": "Java Full Stack & Android Developer",
+      "alumniOf": "Tontadarya College of Engineering",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "mailto:darshannayak580@gmail.com",
+        "telephone": "+91-8431631896",
+        "contactType": "personal"
+      }
+    }
+    </script>
+</head>
+<body class="dark-theme">
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+    <!-- Animated background blobs -->
+    <div class="blob-container">
+        <div class="blob blob-1" id="blob-left"></div>
+        <div class="blob blob-2" id="blob-right"></div>
+        <div class="blob blob-3" id="blob-center"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="main-header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="logo">
+                <span class="logo-accent">&lt;</span>Darshan Antaravalli<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active" id="nav-home-link">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about-link">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects-link">Projects</a></li>
+                    <li><a href="#timeline" class="nav-link" id="nav-timeline-link">Timeline</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <!-- Background Video -->
+            
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-greeting" id="hero-greeting">Hi there, welcome to my space</span>
+                    <h1 class="hero-title" id="hero-title">I'm Darshan Antaravalli</h1>
+                    <div class="typewriter-container">
+                        <span class="typewriter-prefix">A </span>
+                        <span class="typewriter-text" id="typewriter-text"></span>
+                        <span class="cursor" id="typewriter-cursor">|</span>
+                    </div>
+                    <p class="hero-subtitle" id="hero-subtitle">
+                        Computer Science Engineering graduate (2026 batch) with certified expertise in Java Full Stack Development. Passionate about building robust web apps and modern Android solutions.
+                    </p>
+                    <div class="hero-cta" id="hero-cta-buttons">
+                        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+                            Explore Projects <i class="fa-solid fa-arrow-right button-icon"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+                            Get in Touch <i class="fa-solid fa-envelope button-icon"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials" id="hero-social-links">
+                        <a href="https://github.com/darsha405" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" id="github-hero-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/darshan-antaravalli" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="linkedin-hero-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:darshannayak580@gmail.com" class="social-icon" aria-label="Email" id="email-hero-link">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-video-part">
+                    <div class="glow-card-wrapper">
+                        <div class="glow-card">
+                            <div class="code-header">
+                                <span class="dot red-dot"></span>
+                                <span class="dot yellow-dot"></span>
+                                <span class="dot green-dot"></span>
+                                <span class="code-title">visualizer.mp4</span>
+                            </div>
+                            <video src="assets/background-video.mp4" autoplay muted loop playsinline></video>
+                        </div>
+                    </div>
+                    <a href="assets/Resume.pdf" download="Darshan_Antaravalli_Resume.pdf" class="btn btn-primary" id="hero-resume-btn">
+                        -> My Resume
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll Down" id="scroll-down-arrow">
+                    <span class="mouse-icon">
+                        <span class="wheel"></span>
+                    </span>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Background</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info-card scroll-reveal" id="about-info-panel">
+                        <div class="about-photo-wrapper">
+                            <img src="assets/profile.jpg" loading="lazy" alt="Darshan Antaravalli" class="about-photo">
+                        </div>
+                        <h3 class="about-name" style="margin-top: 24px;">Darshan Antaravalli</h3>
+                        <p class="about-title">Java Full Stack & Android Developer</p>
+                        <p class="about-location"><i class="fa-solid fa-location-dot"></i> Haveri, Karnataka, India</p>
+                        
+                        <div class="about-quick-links">
+                            <a href="mailto:darshannayak580@gmail.com" class="quick-link-btn" id="about-email-btn">
+                                <i class="fa-solid fa-envelope"></i> Email Me
+                            </a>
+                            <a href="#contact" class="quick-link-btn btn-filled" id="about-hire-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Hire Me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-text scroll-reveal-delay" id="about-bio-panel">
+                        <h3 class="about-subtitle">Computer Science Engineering Graduate (2026 Batch)</h3>
+                        <p class="about-description">
+                            I am a highly motivated Computer Science Engineering graduate seeking a <strong>Trainee Software Engineer</strong> role to contribute to full stack development and deliver impactful software solutions. 
+                        </p>
+                        <p class="about-description">
+                            My journey in tech began with Java, where I fell in love with backend architecture, relational databases, and object-oriented designs. Expanding my skills, I grew proficient in creating responsive frontends using HTML, CSS, and JavaScript. I also enjoy mobile application development, building end-to-end native Android apps with Java, XML, and Firebase.
+                        </p>
+                        
+                        <!-- Quick Stats -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="stat-number">68.75%</div>
+                                <div class="stat-label">B.E. CSE (VTU)</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">Key Full-Stack Apps</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Certifications</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section section-padding section-bg-alt" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Arsenal</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category-card scroll-reveal" id="skill-cat-languages">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Java (Core & Advanced)</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">XML</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="skills-category-card scroll-reveal-delay" id="skill-cat-backend">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Advanced Java</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JDBC (Database Conn.)</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Servlets</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Development -->
+                    <div class="skills-category-card scroll-reveal" id="skill-cat-frontend">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cubes category-icon"></i>
+                            <h3>Frontend & Mobile</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Responsive UI Design</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Android Studio & UI layouts</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML / CSS / JavaScript</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-category-card scroll-reveal-delay" id="skill-cat-databases">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL (Relational)</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Firebase (Realtime DB & Auth)</span>
+                                <div class="skill-meter"><div class="skill-progress" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skills-category-card scroll-reveal" id="skill-cat-tools" style="grid-column: span 2;">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="tools-badges">
+                            <span class="tool-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="tool-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="tool-badge"><i class="fa-solid fa-mobile-screen-button"></i> Android Studio</span>
+                            <span class="tool-badge"><i class="fa-solid fa-code"></i> VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Creations</span>
+                    <h2 class="section-title">Projects Showcase</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                    <button class="filter-btn" data-filter="web" id="filter-web">Web Apps</button>
+                    <button class="filter-btn" data-filter="android" id="filter-android">Android Apps</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: LMS (Web) -->
+                    <div class="project-card scroll-reveal" data-category="web" id="project-lms">
+                        <div class="project-img-wrapper">
+                            <img src="assets/lms_thumbnail.jpg" loading="lazy" alt="Library Management System Web Dashboard" class="project-img">
+                            <div class="project-tags">
+                                <span class="proj-tag">HTML</span>
+                                <span class="proj-tag">CSS</span>
+                                <span class="proj-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-name">Library Management System</h3>
+                            <span class="project-type"><i class="fa-solid fa-graduation-cap"></i> Academic Project (2025)</span>
+                            <p class="project-short-desc">
+                                Responsive web-based library administration system with dynamic search, member management, and client-side book tracking workflows.
+                            </p>
+                            <div class="project-actions">
+                                <button class="btn btn-small btn-primary open-modal-btn" data-project="lms" id="lms-details-btn">
+                                    Read Details <i class="fa-solid fa-circle-info button-icon"></i>
+                                </button>
+                                <a href="https://github.com/darsha405/library-management-systems" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary" id="lms-code-btn" aria-label="LMS Source Code">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Namma-Kelsa (Android) -->
+                    <div class="project-card scroll-reveal-delay" data-category="android" id="project-namma-kelsa">
+                        <div class="project-img-wrapper">
+                            <img src="assets/job_portal_thumbnail.jpg" loading="lazy" alt="Namma-Kelsa Android App Layout" class="project-img">
+                            <div class="project-tags">
+                                <span class="proj-tag">Android Studio</span>
+                                <span class="proj-tag">Firebase</span>
+                                <span class="proj-tag">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-name">Namma-Kelsa Job Portal</h3>
+                            <span class="project-type"><i class="fa-solid fa-building-user"></i> Internship Project (2026)</span>
+                            <p class="project-short-desc">
+                                Full-stack Job Portal mobile app connecting recruiters & seekers, featuring real-time Firebase synchronization.
+                            </p>
+                            <div class="project-actions">
+                                <button class="btn btn-small btn-primary open-modal-btn" data-project="kelsa" id="kelsa-details-btn">
+                                    Read Details <i class="fa-solid fa-circle-info button-icon"></i>
+                                </button>
+                                <a href="https://github.com/darsha405/Namma-kelsa" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary" id="kelsa-code-btn" aria-label="Namma Kelsa Source Code">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modal Box -->
+        <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close" aria-label="Close details">&times;</button>
+                <div class="modal-body" id="modal-body">
+                    <!-- Content populated via JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience, Education & Certifications Section -->
+        <section class="timeline-section section-padding section-bg-alt" id="timeline">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Milestone Track</span>
+                    <h2 class="section-title">Timeline & Certifications</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="timeline-grid">
+                    <!-- Left Column: Education -->
+                    <div class="timeline-column scroll-reveal" id="timeline-education">
+                        <h3 class="timeline-column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</h3>
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022 - 2026</span>
+                                <h4 class="timeline-title">Bachelor of Engineering — Computer Science</h4>
+                                <p class="timeline-location">Tontadarya College of Engineering, Gadag — VTU</p>
+                                <span class="timeline-grade"><i class="fa-solid fa-chart-line"></i> Score: <strong>68.75%</strong></span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2020 - 2022</span>
+                                <h4 class="timeline-title">Pre-University Certificate (PUC) — Science</h4>
+                                <p class="timeline-location">Morarji Desai Residential PU College, Hassan</p>
+                                <span class="timeline-grade"><i class="fa-solid fa-chart-line"></i> Score: <strong>73%</strong></span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2015 - 2020</span>
+                                <h4 class="timeline-title">Secondary School Certificate (SSLC)</h4>
+                                <p class="timeline-location">MDRS Chikkerur, Haveri</p>
+                                <span class="timeline-grade"><i class="fa-solid fa-chart-line"></i> Score: <strong>76%</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Certifications & Trainings -->
+                    <div class="timeline-column scroll-reveal-delay" id="timeline-certifications">
+                        <h3 class="timeline-column-title"><i class="fa-solid fa-award"></i> Professional Certifications</h3>
+                        <div class="certifications-list">
+                            <!-- Tap Academy -->
+                            <div class="cert-card viewable-cert" data-cert="tap" style="cursor: pointer;">
+                                <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="cert-info">
+                                    <h4 class="cert-title">Java Full Stack Development <i class="fa-solid fa-up-right-from-square cert-link-indicator" style="font-size: 0.75rem; margin-left: 4px; opacity: 0.6;"></i></h4>
+                                    <p class="cert-org">Tap Academy, Bengaluru</p>
+                                    <span class="cert-year"><i class="fa-regular fa-calendar"></i> Issued: 2026</span>
+                                </div>
+                            </div>
+                            <!-- Mind-Matrix -->
+                            <div class="cert-card viewable-cert" data-cert="mind" style="cursor: pointer;">
+                                <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="cert-info">
+                                    <h4 class="cert-title">Android App Development using Generative AI <i class="fa-solid fa-up-right-from-square cert-link-indicator" style="font-size: 0.75rem; margin-left: 4px; opacity: 0.6;"></i></h4>
+                                    <p class="cert-org">Mind-Matrix, Bengaluru</p>
+                                    <span class="cert-year"><i class="fa-regular fa-calendar"></i> Issued: 2026</span>
+                                </div>
+                            </div>
+                            <!-- Deloitte -->
+                            <div class="cert-card viewable-cert" data-cert="deloitte" style="cursor: pointer;">
+                                <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="cert-info">
+                                    <h4 class="cert-title">Data Analytics Job Simulation <i class="fa-solid fa-up-right-from-square cert-link-indicator" style="font-size: 0.75rem; margin-left: 4px; opacity: 0.6;"></i></h4>
+                                    <p class="cert-org">Deloitte (Forage)</p>
+                                    <span class="cert-year"><i class="fa-regular fa-calendar"></i> Issued: 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Modal -->
+        <div class="modal-overlay" id="cert-modal" aria-hidden="true" role="dialog">
+            <div class="modal-content cert-modal-content">
+                <button class="modal-close" id="cert-modal-close" aria-label="Close certificate">&times;</button>
+                <div class="modal-body cert-modal-body" id="cert-modal-body">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Let's connect</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information Details -->
+                    <div class="contact-info scroll-reveal" id="contact-info-panel">
+                        <h3 class="contact-subtitle">Get in Touch</h3>
+                        <p class="contact-text">
+                            I'm seeking full stack Java development or Android Trainee opportunities. If you have a matching role, or if you'd like to collaborate, feel free to send a message!
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-content">
+                                    <span>Email Me</span>
+                                    <a href="mailto:darshannayak580@gmail.com" id="info-email-link">darshannayak580@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="info-content">
+                                    <span>Call Me</span>
+                                    <a href="tel:+918431631896" id="info-phone-link">+91 8431631896</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-content">
+                                    <span>Location</span>
+                                    <p>Haveri, Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-circles">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub" id="github-contact-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn" id="linkedin-contact-link">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card scroll-reveal-delay" id="contact-form-panel">
+                        <form class="contact-form" id="contact-form">
+                            <!-- Replace with your actual Web3Forms Access Key: https://web3forms.com/ -->
+                            <input type="hidden" id="web3forms-access-key" value="1ee0e423-b79a-447e-922d-e7b2cc4f3ec0">
+                            <div class="form-group-row">
+                                <div class="form-group floating-label-group">
+                                    <input type="text" id="form-name" required placeholder=" " class="form-control">
+                                    <label for="form-name">Your Name</label>
+                                </div>
+                                <div class="form-group floating-label-group">
+                                    <input type="email" id="form-email" required placeholder=" " class="form-control">
+                                    <label for="form-email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group floating-label-group">
+                                    <input type="text" id="form-subject" required placeholder=" " class="form-control">
+                                    <label for="form-subject">Subject</label>
+                            </div>
+                            <div class="form-group floating-label-group">
+                                <textarea id="form-message" rows="5" required placeholder=" " class="form-control"></textarea>
+                                <label for="form-message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit">
+                                <span class="submit-text">Send Message</span>
+                                <span class="submit-spinner hidden"><i class="fa-solid fa-spinner fa-spin"></i></span>
+                            </button>
+                            <!-- Message Sent Alert -->
+                            <div class="form-alert hidden" id="form-alert"></div>
+                        </form>
+                        <a href="#home" class="back-to-top-btn" id="back-to-top-link" aria-label="Back to top">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4510/4510682.png" alt="Back to top">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Hidden Messages Admin Modal -->
+    <div class="modal-overlay" id="admin-modal" aria-hidden="true" role="dialog">
+        <div class="modal-content admin-modal-content">
+            <button class="modal-close" id="admin-modal-close" aria-label="Close admin panel">&times;</button>
+            <div class="modal-body">
+                <h3 class="modal-proj-title"><i class="fa-solid fa-user-shield"></i> Messages Inbox</h3>
+                <span class="modal-proj-subtitle">Locally stored contact inquiries (Double-click logo to access)</span>
+                <div class="admin-actions">
+                    <button class="btn btn-small btn-secondary" id="admin-download-btn"><i class="fa-solid fa-download"></i> Backup JSON</button>
+                    <button class="btn btn-small btn-secondary" id="admin-clear-btn" style="border-color: #ef4444; color: #ef4444;"><i class="fa-solid fa-trash-can"></i> Clear All</button>
+                </div>
+                <div class="admin-messages-list" id="admin-messages-list">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-logo" id="footer-admin-trigger" style="cursor: pointer;" title="Double click to access Inbox">&lt;Darshan.Antaravalli /&gt;</p>
+                <p class="footer-copy">
+                    &copy; 2026 Darshan Antaravalli. All Rights Reserved.
+                </p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Core Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
