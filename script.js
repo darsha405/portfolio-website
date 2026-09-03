@@ -289,6 +289,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Projects Details Database
     const projectDetails = {
+        roamly: {
+            title: "Roamly — Travel Explorer",
+            subtitle: "Interactive Web App (2026)",
+            techStack: ["HTML5", "CSS3", "JavaScript", "Weather API", "Interactive Maps", "AI Assistant"],
+            description: "A feature-packed interactive travel explorer web application designed to help users discover global destinations, view live weather, plan itineraries, and explore live 3D world maps.",
+            features: [
+                "<strong>Interactive World Atlas:</strong> Visual interactive map and 3D globe allowing seamless discovery across 7 continents and 200+ destinations.",
+                "<strong>Live Weather Forecasts:</strong> Dynamic weather API integration displaying live temperatures, atmospheric metrics, and travel advisories.",
+                "<strong>Smart Trip Planner:</strong> Dedicated itinerary organizer with wishlist bookmarks and saved trip tracking.",
+                "<strong>AI Travel Assistant:</strong> Built-in AI recommendation assistant providing personalized destination itineraries and travel tips."
+            ],
+            codeLink: "https://github.com/darsha405"
+        },
         lms: {
             title: "Library Management System",
             subtitle: "Academic Project (2025)",
@@ -435,9 +448,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
             case 'projects':
                 addTerminalLine('<strong>Key Projects:</strong><br>' +
-                               '  1. <strong>Library Management System</strong> [Web App]<br>' +
+                               '  1. <strong>Roamly Travel Explorer</strong> [Web App]<br>' +
+                               '     Interactive Maps + Weather API + AI Assistant. Live 3D Atlas & Trip Planner.<br>' +
+                               '  2. <strong>Library Management System</strong> [Web App]<br>' +
                                '     JDBC + MySQL + Java. Secure book checkouts & role clearances.<br>' +
-                               '  2. <strong>Namma-Kelsa Job Portal</strong> [Android App]<br>' +
+                               '  3. <strong>Namma-Kelsa Job Portal</strong> [Android App]<br>' +
                                '     Firebase + Java. Recruiter postings & real-time syncing.');
                 break;
             case 'contact':
