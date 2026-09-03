@@ -290,21 +290,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Projects Details Database
     const projectDetails = {
         roamly: {
-            title: "Roamly — Travel Explorer",
-            subtitle: "Interactive Web App (2026)",
-            techStack: ["HTML5", "CSS3", "JavaScript", "Weather API", "Interactive Maps", "AI Assistant"],
-            description: "A feature-packed interactive travel explorer web application designed to help users discover global destinations, view live weather, plan itineraries, and explore live 3D world maps.",
+            title: "ROAMLY — AI Powered Travel Explorer",
+            subtitle: "Web Application (2026)",
+            liveUrl: "https://shorturl.at/1utbo",
+            codeLink: "https://github.com/darsha405",
+            techStack: ["React.js", "Vite", "JavaScript", "HTML5", "CSS3", "Gemini 3.6 Flash AI", "Lucide React", "Glassmorphism UI", "Web APIs"],
+            description: "ROAMLY is an interactive travel exploration and trip planning web application designed to help users discover destinations, explore attractions, and create personalized travel itineraries.<br><br>The platform provides an immersive travel experience through destination discovery, category-based exploration, saved locations, and an AI-powered trip planner. Users can select destinations, customize their travel preferences, choose trip types and travel styles, and generate personalized itineraries.<br><br>The application also includes an AI travel assistant to help users with travel-related questions, recommendations, destinations, local attractions, weather information, and trip planning.",
             features: [
-                "<strong>Interactive World Atlas:</strong> Visual interactive map and 3D globe allowing seamless discovery across 7 continents and 200+ destinations.",
-                "<strong>Live Weather Forecasts:</strong> Dynamic weather API integration displaying live temperatures, atmospheric metrics, and travel advisories.",
-                "<strong>Smart Trip Planner:</strong> Dedicated itinerary organizer with wishlist bookmarks and saved trip tracking.",
-                "<strong>AI Travel Assistant:</strong> Built-in AI recommendation assistant providing personalized destination itineraries and travel tips."
-            ],
-            codeLink: "https://github.com/darsha405"
+                "<strong>Interactive Travel Exploration:</strong> Modern travel discovery interface with attraction browsing and category/experience-based filtering.",
+                "<strong>Personalized AI Trip Planner:</strong> Generates dynamic itineraries tailored to custom travel preferences, trip styles, and duration.",
+                "<strong>Gemini AI Travel Assistant:</strong> Intelligent AI assistant powered by Google Gemini AI API to provide personalized destination insights and travel assistance.",
+                "<strong>Destination Bookmarks & Storage:</strong> Save favorite destinations and places with local browser persistence.",
+                "<strong>Itinerary Export Tools:</strong> Instant Copy, Download, and Print itinerary options powered by Web APIs (Clipboard API, Print API, File Download).",
+                "<strong>Modern Glassmorphism Design:</strong> Responsive and animated user interface with fluid CSS transitions and Lucide React icons."
+            ]
         },
         lms: {
             title: "Library Management System",
             subtitle: "Academic Project (2025)",
+            codeLink: "https://github.com/darsha405/library-management-systems",
             techStack: ["HTML", "CSS", "JavaScript"],
             description: "A comprehensive library cataloging and administration platform created to simplify book loans, client records, and inventory auditing.",
             features: [
@@ -312,12 +316,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "<strong>JDBC Database Connection:</strong> Implemented direct database persistence to map library transactions safely with relational schemas.",
                 "<strong>Issue & Return Workflow:</strong> Automated checkout alerts, return counters, and active book availability tracking.",
                 "<strong>Fast Query Lookup:</strong> Implemented search scripts filtering by title, author, or availability status in real-time."
-            ],
-            codeLink: "https://github.com/darsha405/library-management-systems"
+            ]
         },
         kelsa: {
             title: "Namma-Kelsa — Job Portal",
             subtitle: "Internship Project (2026)",
+            codeLink: "https://github.com/darsha405/Namma-kelsa",
             techStack: ["Android Studio", "Java", "XML Layouts", "Firebase Auth", "Firebase Database", "MySQL"],
             description: "A dual-dashboard mobile job market matching recruiters and job seekers, optimized for local resource mapping and low data overhead.",
             features: [
@@ -325,8 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "<strong>Firebase Authentication:</strong> Secure profile logs protecting personal resumes, bio listings, and recruiter company profiles.",
                 "<strong>Real-time Synchronisation:</strong> Utilised Firebase Realtime Database to push job posting feeds instantly to active seeker dashboards.",
                 "<strong>Search & Filter:</strong> Structured criteria parameters including wage ranges, location filters, and experience benchmarks."
-            ],
-            codeLink: "https://github.com/darsha405/Namma-kelsa"
+            ]
         }
     };
 
@@ -339,6 +342,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 let techMarkup = data.techStack.map(tech => `<span class="modal-tech-pill">${tech}</span>`).join('');
                 let featuresMarkup = data.features.map(feat => `<li>${feat}</li>`).join('');
 
+                let actionsMarkup = '';
+                if (data.liveUrl) {
+                    actionsMarkup += `
+                        <a href="${data.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1;">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    `;
+                }
+                if (data.codeLink) {
+                    actionsMarkup += `
+                        <a href="${data.codeLink}" target="_blank" rel="noopener noreferrer" class="btn ${data.liveUrl ? 'btn-secondary' : 'btn-primary'}" style="flex: 1;">
+                            <i class="fa-brands fa-github"></i> View Repository
+                        </a>
+                    `;
+                }
+
                 modalBody.innerHTML = `
                     <h3 class="modal-proj-title">${data.title}</h3>
                     <span class="modal-proj-subtitle">${data.subtitle}</span>
@@ -346,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h4 class="modal-section-title">Overview</h4>
                     <p class="modal-description">${data.description}</p>
                     
-                    <h4 class="modal-section-title">Key Implementations</h4>
+                    <h4 class="modal-section-title">Key Implementations & Features</h4>
                     <ul class="modal-features-list">
                         ${featuresMarkup}
                     </ul>
@@ -357,9 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     
                     <div class="modal-actions" style="margin-top: 30px; display: flex; gap: 12px;">
-                        <a href="${data.codeLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1;">
-                            <i class="fa-brands fa-github"></i> View Repository
-                        </a>
+                        ${actionsMarkup}
                     </div>
                 `;
 
